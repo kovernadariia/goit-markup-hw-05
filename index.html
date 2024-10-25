@@ -18,31 +18,26 @@
   </head>
   <body class="body">
     <!--                  OVERLAY                       -->
-    <div class="modal-overlay">
+    <!-- <div class="modal-overlay is-open">
       <div class="modal">
+        <button class="close-button" type="button">
+          <svg class="close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
         <form name="order_service" autocomplete="off" novalidate class="form">
-          <div class="modal-field">
-            <div class="container-close-svg">
-              <button class="close-button" type="button">
-                <svg class="close-svg" width="8" height="8">
-                  <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-              </button>
-            </div>
-            <p class="form-title">
-              Leave your contacts and we will call you back
-            </p>
-            <label class="form-label" for="user-name">Name</label>
-            <div class="modal-input-wrap">
-              <input class="input" type="text" name="name" id="user-name" />
-              <svg width="18" height="18">
-                <use
-                  class="form-icons"
-                  href="./images/icons.svg#icon-person-black"
-                ></use>
-              </svg>
-            </div>
+          <label class="form-label" for="user-name">Name</label>
+          <div class="modal-input-wrap">
+            <input class="input" type="text" name="name" id="user-name" />
+            <svg class="form-icons" width="18" height="18">
+              <use
+                class="form-icons"
+                href="./images/icons.svg#icon-person-black"
+              ></use>
+            </svg>
           </div>
+
           <div class="modal-field">
             <label class="form-label" for="user-phone">Phone</label>
             <div class="modal-input-wrap">
@@ -86,7 +81,7 @@
           </div>
           <div class="modal-field container-checkbox">
             <input
-              class="form-label checkbox"
+              class="form-label checkbox visually-hidden"
               id="policy"
               type="checkbox"
               name="privat-policy"
@@ -95,6 +90,11 @@
             />
 
             <label for="policy" class="form-label checkbox">
+              <span class="custom-checkbox">
+                <svg width="10" height="10">
+                  <use></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the &nbsp;
               <span class="colored-privacy"> Privacy Policy</span>
             </label>
@@ -102,7 +102,7 @@
           <button class="form-button" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
 
     <!--                 /OVERLAY                       -->
     <header class="header">
@@ -657,7 +657,12 @@
           </ul>
         </div>
         <div class="container-footer-subscribe">
-          <form name="subscribe" autocomplete="off" novalidate class="form">
+          <form
+            name="subscribe"
+            autocomplete="off"
+            novalidate
+            class="form-footer"
+          >
             <!-- <p class="title-subscribe">Subscribe</p> -->
             <label class="footer-label" for="subscribe">Subscribe</label>
             <div class="container-input-button">
@@ -680,5 +685,90 @@
         </div>
       </div>
     </footer>
+    <!--                  OVERLAY                       -->
+    <div class="modal-overlay is-open">
+      <div class="modal">
+        <button class="close-button" type="button">
+          <svg class="close-svg" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form name="order_service" autocomplete="off" novalidate class="form">
+          <label class="form-label" for="user-name">Name</label>
+          <div class="modal-input-wrap">
+            <input class="input" type="text" name="name" id="user-name" />
+            <svg class="form-icons" width="18" height="18">
+              <use href="./images/icons.svg#icon-person-black"></use>
+            </svg>
+          </div>
+
+          <div class="modal-field">
+            <label class="form-label" for="user-phone">Phone</label>
+            <div class="modal-input-wrap">
+              <input
+                class="input"
+                type="tel"
+                name="telephone"
+                id="user-phone"
+              />
+              <svg width="18" height="18">
+                <use
+                  class="form-icons"
+                  href="./images/icons.svg#icon-phone"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="modal-input-wrap">
+              <input class="input" type="email" name="email" id="user-email" />
+              <svg width="18" height="18">
+                <use
+                  class="form-icons"
+                  href="./images/icons.svg#icon-email"
+                ></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="form-label" for="user-comment">Comment</label>
+            <div class="modal-input-wrap">
+              <textarea
+                class="input comment"
+                name="comment"
+                rows="5"
+                placeholder="Text input"
+                id="user-comment"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-field container-checkbox">
+            <input
+              class="form-label checkbox visually-hidden"
+              id="policy"
+              type="checkbox"
+              name="privat-policy"
+              value="agree"
+              required
+            />
+
+            <label for="policy" class="form-label checkbox">
+              <span class="custom-checkbox">
+                <svg class="checkbox-picture" width="10" height="10">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the &nbsp;
+              <span class="colored-privacy"> Privacy Policy</span>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!--                 /OVERLAY                       -->
   </body>
 </html>
