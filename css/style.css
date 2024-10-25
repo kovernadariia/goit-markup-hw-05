@@ -660,6 +660,7 @@ button {
 }
 .close-svg {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* position: absolute; */
 }
 /* .container-close-svg {
@@ -692,6 +693,12 @@ button {
 .close-button:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
+}
+.close-svg:hover {
+  fill: #ffffff;
+}
+.close-svg:focus {
   fill: #ffffff;
 }
 .form-title {
@@ -738,8 +745,9 @@ button {
 
 .modal-input-wrap {
   position: relative;
+  margin-bottom: 8px;
 }
-.form-icons {
+. .form-icons {
   fill: #2e2f42;
   width: 18px;
   height: 24px;
@@ -759,16 +767,18 @@ button {
   width: 360px;
   height: 120px;
 }
-
+.modal-input-wrap-input {
+}
 .form-label {
   display: flex;
   direction: column;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  display: block;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
+  line-height: 1.17;
 }
 .checkbox {
   margin-top: 16px;
