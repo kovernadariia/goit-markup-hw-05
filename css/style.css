@@ -782,6 +782,14 @@ button {
   fill: #fff;
   margin-left: 16px;
 }
+.title-subscribe {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
 /* ---------------------OVERLAY---------------------- */
 .modal-overlay {
   position: fixed;
