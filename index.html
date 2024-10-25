@@ -699,8 +699,8 @@
           <div class="modal-input-wrap">
           <label class="form-label" for="user-name">Name</label>
           <div class="modal-input-wrap-input">
-            <input class="input" type="text" name="name" id="user-name" />
-            <svg class="form-icons" width="18" height="18">
+            <input class="input" type="text" name="user-name" id="user-name" />
+            <svg class="form-icons" width="18" height="24">
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
             </div>
@@ -715,9 +715,9 @@
                 name="telephone"
                 id="user-phone"
               />
-              <svg width="18" height="18">
+              <svg class="form-icons" width="18" height="24">
                 <use
-                  class="form-icons"
+                  
                   href="./images/icons.svg#icon-phone"
                 ></use>
               </svg>
@@ -727,44 +727,45 @@
             <label class="form-label" for="user-email">Email</label>
             <div class="modal-input-wrap-input">
               <input class="input" type="email" name="email" id="user-email" />
-              <svg width="18" height="18">
+              <svg class="form-icons" width="18" height="24">
                 <use
-                  class="form-icons"
+                  
                   href="./images/icons.svg#icon-email"
                 ></use>
               </svg>
             </div>
           </div>
-          <div class="modal-input-wrap">
+          <div class="modal-input-wrap comment-input-container">
             <label class="form-label" for="user-comment">Comment</label>
-            <div class="modal-input-wrap-input">
+            <!-- <div class="modal-input-wrap-input"> -->
               <textarea
                 class="input comment"
-                name="comment"
+                name="user-comment"
                 rows="5"
                 placeholder="Text input"
                 id="user-comment"
               ></textarea>
-            </div>
+            <!-- </div> -->
           </div>
           <div class="modal-field container-checkbox">
             <input
               class="form-label checkbox visually-hidden"
-              id="policy"
+              id="user-privacy"
               type="checkbox"
-              name="privat-policy"
-              value="agree"
+              name="user-privacy"
+              value="true"
               required
             />
 
-            <label for="policy" class="form-label checkbox">
+            <label for="user-privacy" class="form-label checkbox">
               <span class="custom-checkbox">
-                <svg class="checkbox-picture" width="10" height="10">
+                <svg class="checkbox-picture" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
-              </span>
-              I accept the terms and conditions of the &nbsp;
-              <span class="colored-privacy"> Privacy Policy</span>
+              </span> I accept the terms and conditions of the &nbsp;
+              
+              <a href="./index.html"><span class="colored-privacy"> Privacy Policy</span></a>
+             
             </label>
           </div>
           <button class="form-button" type="submit">Send</button>
